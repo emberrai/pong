@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff00;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    letter-spacing: 3px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #00ff00;
+}
+
+.score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.score {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    min-width: 100px;
+}
+
+.divider {
+    font-size: 1.5rem;
+    color: #00ff00;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 20px auto;
+    background: #000;
+    border: 3px solid #00ff00;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    cursor: none;
+}
+
+.controls {
+    margin: 20px 0;
+    background: rgba(0, 255, 0, 0.05);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 3px solid #00ff00;
+}
+
+.controls p {
+    font-size: 0.95rem;
+    margin: 8px 0;
+    color: #ddd;
+}
+
+.controls strong {
+    color: #00ff00;
+}
+
+.status-bar {
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(0, 255, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid #00ff00;
+}
+
+#gameStatus {
+    font-size: 1rem;
+    color: #00ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #gameCanvas {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .score {
+        font-size: 2rem;
+        min-width: 80px;
+    }
+}
